@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText edtSoA, edtSoB;
-    private Button btnSubmit;
+    private Button btnSubmit, btnActivity;
     private TextView txtResult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edtSoB = (EditText) findViewById(R.id.edtSoB);
         txtResult = (TextView) findViewById(R.id.txtResult);
         btnSubmit = (Button) findViewById(R.id.btnAnonymous);
+        btnActivity = (Button) findViewById(R.id.btnActivity);
+        btnActivity.setOnClickListener(this);
     }
 
 
